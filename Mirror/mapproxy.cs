@@ -7,6 +7,7 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Media;
 
 namespace Mirror
 {
@@ -25,6 +26,7 @@ namespace Mirror
                 var data = (RootObject)serializer.ReadObject(ms);
 
                 return data;
+                
             }
         }
         [DataContract]

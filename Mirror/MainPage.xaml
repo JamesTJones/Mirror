@@ -7,10 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <StackPanel Background="Aquamarine">
-        <Button Content="Get Weather" Click="Button_Click"/>
-        <TextBlock Name="ResultTextBlock" />
+       
+        <Button Content="Get Weather" FontFamily="Assets/GloriaHallelujah.ttf #Gloria Hallelujah" Click="Button_Click"/>
+        <TextBlock Name="ResultTextBlock" FontFamily="Assets/GloriaHallelujah.ttf #Gloria Hallelujah" />
         <Image Name="ResultImage" Width="200" Height="200"/>
-        <TextBlock Name="TimeBlock" />
+        <TextBlock Name="TimeBlock" FontFamily="Assets/Monofett.ttf # Monofett" FontSize="40px" />
     </StackPanel>
 
   
