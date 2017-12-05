@@ -7,6 +7,7 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Devices.Geolocation;
 using Windows.UI.Xaml.Media;
 
 namespace Mirror
@@ -15,7 +16,7 @@ namespace Mirror
     {
         public class OpenMapProxy
         {
-            public async static Task<RootObject> GetWeather( double lat, double lon)
+            public async static Task<RootObject> GetWeather(decimal lat, decimal lon)
             {
                 var http = new HttpClient();
                 var response = await http.GetAsync("http://openweathermap.org/data/2.5/weather?lat=35.1380556&lon=-79.0075&appid=b1b15e88fa797225412429c1c50c122a1");
@@ -33,9 +34,9 @@ namespace Mirror
         public class Coord
         {
             [DataMember]
-            public double lon { get; set; }
+            public decimal lat { get; set; }
             [DataMember]
-            public double lat { get; set; }
+            public decimal lon { get; set; }
         }
         [DataContract]
         public class Weather
